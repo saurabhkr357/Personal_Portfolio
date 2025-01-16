@@ -1,6 +1,8 @@
 import React from 'react'
 import './WorkExperience.css'
 import { BiCheck, BiFontSize } from 'react-icons/bi'
+import IMG111 from '../../assests/GAVS.png'
+
 const WorkExperience = () => {
   return (
     <section id='services_workExp'>
@@ -8,7 +10,7 @@ const WorkExperience = () => {
       <h2>Work Experience</h2>
       <div className='cointainer service_container_workExp'>
         <article className="services_work_exp">
-          <div className="service_head_workExperience">
+          <div className="service_head_workExperience" style={{ backgroundImage: `url(${IMG111})` }} >
           </div>
           <ul className='service_list'>
             <h3>GS Labs | GAVS</h3>
