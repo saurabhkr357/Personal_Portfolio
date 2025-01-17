@@ -1,81 +1,86 @@
-.service_container_workExp{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 5rem;
-    margin: auto; /* Centers the container horizontally */
-    justify-content: center; /* Aligns grid content to the center */
-    align-items: center; /* Vertically aligns the grid items (optional) */
-    max-width: 1200px; /* Restrict the maximum width for better layout */
-    width: 100%; /* Ensures it stretches across the screen */
+.service_container_workExp {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+  margin: auto; /* Centers the container horizontally */
+  justify-content: center; /* Aligns grid content to the center */
+  align-items: center; /* Vertically aligns the grid items (optional) */
+  max-width: 1200px; /* Restrict the maximum width for better layout */
+  width: 100%; /* Ensures it stretches across the screen */
 }
 
-.services_work_exp{
-    background : var(--color-bg-varient);
-    padding: 2.4rem 2rem;
-    border-radius: 3rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
+.services_work_exp {
+  background: var(--color-bg-varient);
+  padding: 2.4rem 2rem;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
-.services_work_exp:hover{
-    background: transparent;
-    border-color: var(--color-primary-varient);
-    cursor: default;
+.services_work_exp:hover {
+  background: transparent;
+  border-color: var(--color-primary-varient);
+  cursor: default;
 }
 
 .service_head_workExperience {
-    background: var(--color-primary);
-    padding: 4rem;
-    border-radius: 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents tiling */
-    color: #fff; /* Ensures text is readable on the background */
+  background: var(--color-primary);
+  padding: 4rem;
+  border-radius: 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  background-size: cover; /* Ensures the image covers the entire header */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  color: #fff; /* Ensures text is readable on the background */
 }
 
-
-.service_head h3{
-    color: var(--color-bg);
-    font-size: 1rem;
-    text-align: center;
+.service_head h3 {
+  color: var(--color-bg);
+  font-size: 1rem;
+  text-align: center;
 }
 
-.service_list{
-    padding: 2rem;
+.service_list {
+  padding: 2rem;
 }
 
-.service_list li{
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.8rem;
+.service_list li {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
 }
 
-.service_list-icon{
-    color-scheme: var(--color-primary);
-    margin-top: 2px;
-
+.service_list-icon {
+  color-scheme: var(--color-primary);
+  margin-top: 2px;
 }
 
-.service_list p{
-    font-size: 0.9rem;
+.service_list p {
+  font-size: 0.9rem;
 }
 /* ############################ MediaQuery(Medium devices) #########################################*/
-@media screen and (max-width:1024px) {
-    .service_container{
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-    .services{
-        height: auto;
-    }
+@media screen and (max-width: 1024px) {
+  .service_container_workExp {
+    grid-template-columns: 1fr 0fr;
+    gap: 0rem;
+  }
+  .service_head_workExperience {
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+  }
+  .services_workExp {
+    height: auto;
+  }
 }
 
 /* ############################ MediaQuery(small devices) #########################################*/
-@media screen and (max-width:600px) {
-    .service_container{
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
+@media screen and (max-width: 600px) {
+  .service_container_workExp {
+    grid-template-columns: 0.95fr;
+    gap: 0.5rem;
+  }
+  .service_head_workExperience {
+    padding-top: 9.25%;
+  }
 }
